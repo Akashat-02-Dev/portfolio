@@ -1,9 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLenis } from "lenis/react";
+import { DATA } from "@/data";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -81,6 +82,16 @@ export const Navbar = () => {
               {link.name}
             </a>
           ))}
+          <a
+            href={DATA.contact.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition-colors"
+          >
+            <Download size={16} />
+            CV
+          </a>
           {/* <button
             onClick={toggleTheme}
             className="p-2 rounded-full hover:bg-secondary/80 transition-colors"
@@ -126,6 +137,16 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
+              <a
+                href={DATA.contact.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="flex items-center gap-2 text-lg font-medium text-indigo-400 hover:text-indigo-300"
+              >
+                <Download size={20} />
+                Download CV
+              </a>
             </div>
           </motion.div>
         )}

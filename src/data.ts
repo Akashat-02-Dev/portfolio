@@ -98,6 +98,7 @@ export const DATA = {
     email: "akashatojha2002" + "@" + "gmail.com",
     phone: "+91 9874510316",
     location: "Kolkata, India",
+    resumeUrl: "/resume.pdf",
     social: {
       linkedin: { name: "LinkedIn", url: "https://www.linkedin.com/in/akashat-ojha/" },
       github: { name: "GitHub", url: "https://github.com/Akashat-02-Dev" },

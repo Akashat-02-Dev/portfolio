@@ -81,6 +81,15 @@ export function BioCard({ className }: { className?: string }) {
              </span>
          ))}
          <a 
+            href={DATA.contact.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="flex items-center gap-1 text-xs font-semibold text-neutral-400 hover:text-white transition-colors group/resume"
+         >
+            Download CV <Download size={14} className="group-hover/resume:translate-y-0.5 transition-transform" />
+         </a>
+         <a 
             href={`mailto:${DATA.contact.email}`}
             className="ml-auto flex items-center gap-1 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors group/link"
          >
