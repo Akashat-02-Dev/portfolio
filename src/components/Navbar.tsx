@@ -102,12 +102,12 @@ export const Navbar = () => {
 
         {/* Mobile Toggle */}
         <div className="flex md:hidden items-center gap-4">
-          <button
+          {/* <button
             onClick={toggleTheme}
             className="p-2 rounded-full hover:bg-secondary/80 transition-colors"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
+          </button> */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2"
