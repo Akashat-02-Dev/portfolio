@@ -87,7 +87,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             download
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition-colors"
+            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-black rounded-full hover:bg-white hover:text-white transition-colors"
           >
             <Download size={16} />
             CV
