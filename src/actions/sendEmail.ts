@@ -40,7 +40,7 @@ export async function sendEmail(data: ContactFormData) {
 
     await transporter.sendMail({
       from: process.env.GMAIL_USER, // Sender address (authenticated user)
-      to: "akashatojha2002@gmail.com", // Recipient address
+      to: process.env.GMAIL_USER, // Recipient address
       replyTo: email, // Allow replying to the user's email
       subject: `Portfolio Contact: ${subject}`,
       html: htmlContent,

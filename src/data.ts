@@ -95,7 +95,7 @@ export const DATA = {
     ],
   },
   contact: {
-    email: "akashatojha2002@gmail.com",
+    email: "akashatojha2002" + "@" + "gmail.com",
     phone: "+91 9874510316",
     location: "Kolkata, India",
     social: {
