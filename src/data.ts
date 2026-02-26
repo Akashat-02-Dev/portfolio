@@ -19,11 +19,11 @@ export const DATA = {
   experience: [
     {
       role: "Software Engineer",
-      company: "AdroiBI",
+      company: "AdroitBI",
       location: "Remote",
       date: "July 2025 – Present",
       achievement:
-        "Working on their website technical solution, Large Language Models, NLP, and AI Models.",
+        "Working on their Websites, Technical solution, Large Language Models, NLP, and AI Models.",
     },
     {
       role: "Web Development Intern",
