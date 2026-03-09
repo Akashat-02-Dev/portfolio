@@ -71,6 +71,15 @@ export const DATA = {
       thumbnail: "https://placehold.co/800x600/1a1a1a/ffffff?text=EduBH+Dashboard",
     },
     {
+      title: "EduBH - HRMS + CRM",
+      tech: ["Next.js", "TypeScript", "Firebase"],
+      detail:
+        "Created a complete end-to-end platform application for EduBH that manages the complete operations, reports, and working of the company.",
+      link: "https://people.edubh.com",
+      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      thumbnail: "https://placehold.co/800x600/1a1a1a/ffffff?text=EduBH+HRMS",
+    },
+    {
       title: "AI Movie Recommender",
       tech: ["Node.js", "Express", "OpenAI API"],
       detail:

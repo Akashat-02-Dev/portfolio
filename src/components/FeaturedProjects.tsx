@@ -3,6 +3,7 @@
 import { DATA } from "../data";
 import { ProjectCard } from "./ProjectCard";
 import { FadeIn } from "./FadeIn";
+import { cn } from "@/lib/utils";
 
 export function FeaturedProjects() {
   return (
@@ -31,11 +32,11 @@ export function FeaturedProjects() {
                 link={project.link}
                 videoUrl={project.videoUrl}
                 thumbnail={project.thumbnail}
-                className={
-                  index === 0
-                    ? "md:col-span-2 md:row-span-2" // Hero Tile
-                    : "col-span-1" // Standard Tile
-                }
+                className={cn(
+                  "col-span-1",
+                  index === 0 && "md:col-span-2",
+                  index === 2 && "md:col-span-1 lg:col-span-2"
+                )}
               />
             ))}
           </div>
