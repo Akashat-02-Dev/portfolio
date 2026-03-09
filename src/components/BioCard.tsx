@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { DATA } from "../data";
-import { Github, Linkedin, Mail, ArrowUpRight, Download } from "lucide-react";
+import { Github, Linkedin, ArrowUpRight, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function BioCard({ className }: { className?: string }) {

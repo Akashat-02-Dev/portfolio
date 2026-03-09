@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun, Moon, Download } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLenis } from "lenis/react";
 import { DATA } from "@/data";
@@ -9,6 +9,7 @@ import { DATA } from "@/data";
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
+  { name: "Education", href: "#education" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
@@ -17,7 +18,6 @@ const navLinks = [
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true); // Default to dark as per layout
   const lenis = useLenis();
 
   useEffect(() => {
@@ -27,16 +27,6 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleTheme = () => {
-    const html = document.documentElement;
-    if (isDark) {
-      html.classList.remove("dark");
-    } else {
-      html.classList.add("dark");
-    }
-    setIsDark(!isDark);
-  };
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -92,22 +82,10 @@ export const Navbar = () => {
             <Download size={16} />
             CV
           </a>
-          {/* <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-secondary/80 transition-colors"
-          >
-            {isDark ? <Sun size={20} /> : <Moon size={20} />}
-          </button> */}
         </div>
 
         {/* Mobile Toggle */}
         <div className="flex md:hidden items-center gap-4">
-          {/* <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-secondary/80 transition-colors"
-          >
-            {isDark ? <Sun size={20} /> : <Moon size={20} />}
-          </button> */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2"

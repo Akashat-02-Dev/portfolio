@@ -34,6 +34,32 @@ export const DATA = {
         "Engineered a dynamic music player using complex state management and optimized DOM manipulation for zero lag.",
     },
   ],
+  education: [
+    {
+      level: "Bachelor of Technology (Hons.)",
+      field: "Electronics and Communication Engineering",
+      institution: "B. P. Poddar Institute of Management and Technology",
+      board: "Maulana Abul Kalam Azad University of Technology",
+      date: "2021 – 2025",
+      score: "8.08 CGPA",
+    },
+    {
+      level: "Higher Secondary / Class 12th",
+      field: "Computer Science",
+      institution: "St. Stephen's School",
+      board: "ISC",
+      date: "2020 – 2021",
+      score: "87.5%",
+    },
+    {
+      level: "Secondary / Class 10th",
+      field: "General Studies",
+      institution: "St. Stephen's School",
+      board: "ICSE",
+      date: "2018 – 2019",
+      score: "87.3%",
+    },
+  ],
   projects: [
     {
       title: "EduBH - EdTech Consultation Platform",
