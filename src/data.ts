@@ -79,6 +79,13 @@ export const DATA = {
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
       thumbnail: "https://placehold.co/800x600/1a1a1a/ffffff?text=EduBH+HRMS",
     },
+  {
+    title: "Apex Business Suite",
+    tech: ["Node.js", "Firebase", "JavaScript", "Kotlin", "Netlify"],
+    // subtitle: "Enterprise ERP & CRM Ecosystem",
+    detail: "Architected a cross-platform ERP/CRM ecosystem featuring a Node.js multi-tenant API hub and an Android native WebView container. Implemented dual Firebase/mock authentication with offline fallbacks and engineered interconnected micro-service modules.",
+    link: "apex-business-suite.netlify.app"
+  },
     {
       title: "AI Movie Recommender",
       tech: ["Node.js", "Express", "OpenAI API"],
